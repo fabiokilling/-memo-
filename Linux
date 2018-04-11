@@ -1,0 +1,13 @@
+rm -rf / 
+遍历形式删除所有文件，无需确认
+
+linux cmatrix
+$ sudo apt-get update;sudo apt-get install cmatrix
+
+linux   ls,cd,cp :wq  s  :quit
+pwd(查看当前所在目录）
+在linux中 定义文件或者文件夹的权限为“777”，就是所有的权限，4是读的权限，2是写的权限，1是执行的权限，7就是所有权限
+例如:
+sudo chmod -R 777
+-R : 对目前目录下的所有档案与子目录进行相同的权限变更(即以递回的方式逐个变更)
+
