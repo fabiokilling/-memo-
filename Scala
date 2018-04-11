@@ -1,0 +1,42 @@
+object TimerAnonymous {  
+      def oncePerSecond(callback: () => Unit) {  
+              while (true) { callback(); Thread sleep 1000 }  
+      }  
+      def main(args: Array[String]) {  
+              oncePerSecond(() =>  
+                      println("time flies like an arrow..."))  
+      }  
+}  
+匿名函数,回调函数，每秒打印一次。
+
+
+
+定义变量用val和var，定义方法用def
+val变量的值只能初始化一次，再次赋值就发生错误。var和java的变量相同，可以随时修改。
+val是函数式编程的风格，变量一旦赋值就不要再做修改。从程序上将有很多好处，但有时候做起来会比较绕。
+
+import java.io._
+
+object Test {
+   def main(args: Array[String]) {
+      val writer = new PrintWriter(new File("test.txt" ))
+
+      writer.write("写入")
+      writer.close()
+   }
+}
+
+
+读取文件
+
+import scala.io.Source
+
+object Test {
+   def main(args: Array[String]) {
+      println("文件内容为:" )
+
+      Source.fromFile("test.txt" ).foreach{ 
+         print 
+      }
+   }
+}
