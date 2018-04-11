@@ -1,0 +1,75 @@
+expected an indented block缩进报错
+invalid character in identifier中英文报错
+
+lower()小写
+upper()大写
+
+C:\ProgramData\Anaconda3
+
+C:\Users\ArcherX\AppData\Local\Programs\Python\Python36
+
+
+
+Google分布式 MapReduce
+https://www.cnblogs.com/fuzhe1989/p/3413457.html
+
+MapReduce库是为了帮助使用成百上千台机器处理数量非常大的数据的，它必须能够优雅地承受机器错误
+
+
+
+
+运行时报错：AttributeError: module 'urllib' has no attribute 'urlopen'
+在网上查了一些资料，有人说是因为你的这个工程目录下可能有一个自己定义的文件与urllib重名，导致上述代码在引用时实际引用的是自定义的那个urllib，结果查找自己的项目文件夹下也没有重名的文件。其实真正原因是在Python3.X中应该用urllib.request。更改后就不会再出现这个错误了。
+import urllib.request
+file = urllib.request.urlopen('http://helloworldbook.com/data/message.txt')
+message = file.read()
+print(message)
+
+
+default默认
+
+python里怎么终止程序的执行？
+import sys
+sys.exit(0)
+
+Or you can use:
+
+raise SystemExit
+
+If you are using IDLE:
+
+just use "quit()"
+
+
+sort()改变元列表，sorted()不改变
+内置              全局
+L.sort()=       ,     =sorted()
+reverse逆置
+tuple元组不可改变
+
+
+split(",")   代表以,为分隔符分解字符串
+name_string = "Sam,Brad,Alex,Cameron,Toby,Gwen,Jenn,Connor"
+name = name_string.split(',')
+for name in name:
+    print(name)
+
+strip是删除的意思；而split则是分割的意思
+
+strip能删除首尾的
+声明：s为字符串，rm为要删除的字符序列
+
+s.strip(rm)       删除s字符串中开头、结尾处，位于 rm删除序列的字符
+s.lstrip(rm)      删除s字符串中开头处，位于 rm删除序列的字符
+s.rstrip(rm)     删除s字符串中结尾处，位于 rm删除序列的字符
+
+
+使用print写文件
+以写模式'w'或者追加模式"a"打开文件,打开文件后使用print写文件，like this:
+my_file = open("new_file.txt", 'w')
+print >> my_file, "Hello there, neighbor!"
+my_file.close()
+这里的两个>符号，有时称为山形符号，告诉print要把它的输出发送到一个文件中
+而不是屏幕上，则成为重定向(redirecting)输出。
+有时使用print比write()更方便，因为print还会额外完成一些工作，比如把数字自动转换为字符串等。
+如果要在文件中放入文本，你可以使用print，也可以使用write()。
