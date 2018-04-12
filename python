@@ -108,3 +108,13 @@ $表示行的结束，\d$表示必须以数字结束。
 如果要匹配'010-12345'这样的号码呢？由于'-'是特殊字符，在正则表达式中，要用'\'转义，所以，上面的正则是\d{3}\-\d{3,8}。
 
 但是，仍然无法匹配'010 - 12345'，因为带有空格。所以我们需要更复杂的匹配方式。
+
+
+
+储存一个list
+使用pickle，将列表储存在文件中:
+import pickle
+my_list = ['Fred', 73, 'Hello there', 81.9876e-13]
+pickle_file = open('my_pickled_list.pkl', 'w')
+pickle.dump(my_list, pickle_file)
+pickle_file.close()
