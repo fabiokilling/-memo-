@@ -24,3 +24,8 @@ end = time.clock()
 
 print("Running time: %s Seconds"%(end - strat))
 
+
+
+
+
+#coding:utf-8
