@@ -106,3 +106,9 @@ pickle_file.close()
 
 print(recovered_list)
 (上面"w"和"r"后都加了b，因为pickle存储方式默认是二进制方式,不用二进制方式打开就会报错，所以后面加上"b")
+
+怎样最大程度用CPU，提高程序运行速度？
+https://www.zhihu.com/question/38609486
+
+Python中的GIL、多进程和多线程
+http://www.cnblogs.com/codefish/p/4961963.html
