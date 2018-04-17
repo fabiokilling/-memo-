@@ -29,3 +29,15 @@ print("Running time: %s Seconds"%(end - strat))
 
 
 #coding:utf-8
+
+
+
+
+http协议
+
+get   下载的到网页内容 
+
+post  提交表单给网站后台
+
+
+
