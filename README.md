@@ -39,5 +39,6 @@ get   下载的到网页内容
 
 post  提交表单给网站后台
 
-
+# Anaconda 切换进入新环境
+activate 
 
