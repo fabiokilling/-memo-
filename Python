@@ -21,7 +21,8 @@ print("%.2f"%变量名）
 
 
 运行时报错：AttributeError: module 'urllib' has no attribute 'urlopen'
-在网上查了一些资料，有人说是因为你的这个工程目录下可能有一个自己定义的文件与urllib重名，导致上述代码在引用时实际引用的是自定义的那个urllib，结果查找自己的项目文件夹下也没有重名的文件。其实真正原因是在Python3.X中应该用urllib.request。更改后就不会再出现这个错误了。
+在网上查了一些资料，有人说是因为你的这个工程目录下可能有一个自己定义的文件与urllib重名，导致上述代码在引用时实际引用的是自定义的那个urllib，
+结果查找自己的项目文件夹下也没有重名的文件。其实真正原因是在Python3.X中应该用urllib.request。更改后就不会再出现这个错误了。
 import urllib.request
 file = urllib.request.urlopen('http://helloworldbook.com/data/message.txt')
 message = file.read()
