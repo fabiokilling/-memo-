@@ -44,3 +44,6 @@ activate
 
 # 123
 https://zhuanlan.zhihu.com/p/36036331?group_id=971929985087434752
+
+# Spyder
+使用Ctrl+SHIFT+Z能够反撤回
