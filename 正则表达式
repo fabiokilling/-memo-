@@ -57,3 +57,13 @@ result.span()     输出匹配结果的范围
       (?=     # 断言要匹配的文本的后缀
       <\/\1>  # 查找尖括号括起来的内容：前面是一个"/"，后面是先前捕获的标签
       )       # 后缀结束
+
+re.match('^He.*?(\d+).*?Demo$')
+
+import re
+content = '''Hello 1234567 World_This
+is a Regex Demo
+'''
+result =re.match('^He.*?(\d+).*?Demo$',content,re.S)
+
+总结：尽量使用泛匹配、使用括号得到匹配目标、尽量使用非贪婪模式、有换行符就用re.S(不使用的话没法匹配换行符)
