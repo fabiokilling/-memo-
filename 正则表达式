@@ -67,3 +67,8 @@ is a Regex Demo
 result =re.match('^He.*?(\d+).*?Demo$',content,re.S)
 
 总结：尽量使用泛匹配、使用括号得到匹配目标、尽量使用非贪婪模式、有换行符就用re.S(不使用的话没法匹配换行符)
+
+
+
+re.search
+总结:为匹配方便，能用search就不用match
