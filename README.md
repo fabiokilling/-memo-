@@ -52,3 +52,6 @@ https://zhuanlan.zhihu.com/p/36036331?group_id=971929985087434752
 C:\WINDOWS\system32>block should really be the equivalent of'block' 不是内部或外部命令，也不是可运行的程序或批处理文件。
 
 将blcok前面的路径加入path（环境变量系统变量），如C:\WINDOWS\system32>
+
+# Web
+网页优化方面有一项措施是减少HTTP请求次数，就是把尽量多的css和js资源合并在一起，目的是尽量减少网页请求静态资源的次数，提高网页加载速度，同时减缓服务器的压力。
