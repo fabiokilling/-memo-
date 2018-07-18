@@ -553,3 +553,5 @@ $ wget http://prdownloads.sourceforge.net/sourceforge/nagios/nagios-3.2.1.tar.gz
 
 $ wget -O taglist.zip http://www.vim.org/scripts/download_script.php?src_id=7701
 
+查询进程
+ps -ef | grep java
