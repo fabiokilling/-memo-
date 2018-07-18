@@ -113,3 +113,11 @@ https://www.zhihu.com/question/38609486
 
 Python中的GIL、多进程和多线程
 http://www.cnblogs.com/codefish/p/4961963.html
+
+
+
+
+读取输入
+import sys
+a = sys.argv[1]
+
