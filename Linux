@@ -555,3 +555,6 @@ $ wget -O taglist.zip http://www.vim.org/scripts/download_script.php?src_id=7701
 
 查询进程
 ps -ef | grep java
+
+kill 命令用于终止进程
+kill -9 [PID]
