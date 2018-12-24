@@ -55,3 +55,6 @@ C:\WINDOWS\system32>block should really be the equivalent of'block' 不是内部
 
 # Web
 网页优化方面有一项措施是减少HTTP请求次数，就是把尽量多的css和js资源合并在一起，目的是尽量减少网页请求静态资源的次数，提高网页加载速度，同时减缓服务器的压力。
+
+#搜索引擎代码 
+例：site:steamcn.com 羞辱1汉化 
